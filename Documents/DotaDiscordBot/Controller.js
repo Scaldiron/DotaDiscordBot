@@ -5,8 +5,8 @@ const ytdl = require('ytdl-core');
 const d2gsi = require('dota2-gsi');
 
 function printMessageToDiscord(message, filePath) {
-    let defChannel = client.channels.get('306873287261028354');
-    let voiceChannel = client.channels.get('141020990359470080');
+    let defChannel = client.channels.get('[your chat channel here]');
+    let voiceChannel = client.channels.get('[your voice channel here]');
     if (!voiceChannel) return console.error("The channel does not exist!");
     voiceChannel.join().then(connection => {
         //const stream = ytdl('https://www.youtube.com/watch?v=6n3pFFPSlW4', { filter: 'audioonly'});
@@ -85,4 +85,4 @@ clients.forEach(function(client, index) {
 
 
 
-client.login('NTI3Mjk0ODE4OTA5NDIxNTk4.XetpAg.XAGhBgjbbzUczserhJM4WDxuANk');
+client.login('[Your bot token here]');
